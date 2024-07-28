@@ -2,20 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>大模型理论基础</title>
+  <title>Chen-notebook</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="description" content="Description">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" href="/images/favicon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon" />
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@latest/lib/themes/vue.css">
 </head>
 <body>
 <div id="app"></div>
+
+<!-- Giscus 评论组件 -->
+<!--<div id="giscus-container">-->
+<!--  <script src="https://giscus.app/client.js"-->
+<!--          data-repo="chenlin1037/Infinite-space"-->
+<!--          data-repo-id="R_kgDOMJdMYA"-->
+<!--          data-category="General"-->
+<!--          data-category-id="DIC_kwDOMJdMYM4ChOzj"-->
+<!--          data-mapping="title"-->
+<!--          data-strict="0"-->
+<!--          data-reactions-enabled="1"-->
+<!--          data-emit-metadata="0"-->
+<!--          data-input-position="top"-->
+<!--          data-theme="light_tritanopia"-->
+<!--          data-lang="zh-CN"-->
+<!--          data-loading="lazy"-->
+<!--          crossorigin="anonymous"-->
+<!--          async>-->
+<!--  </script>-->accf88172827da48c1c70bb0712cc444
+<!--</div>-->
+
 <script>
   window.$docsify = {
-    name: '大模型理论基础',
+    name: 'Chen-notebook',
     repo: 'https://github.com/chenlin1037/Infinite-space',
     loadSidebar: true,
+    loadNavbar: true,
+    coverpage: true,
+
+
+    // disqus: 'shortname',
     auto2top: true,
     sidebarDisplayLevel: 2,
     subMaxLevel: 2,
@@ -39,10 +67,45 @@
       color:'rgb(90,90,90)',
       language:'chinese',
       isExpected: true
+    },
+    share : {
+
+      facebook: true,
+      twitter: true,
+      whatsapp: true,
+      telegram: true,
+
+    },
+    footer: {
+      copy: '<span> &copy; 2023</span>',
+      auth: 'by Chen',
+      pre: '<hr/>',
+      style: 'text-align: center;',
+      class: 'className',
+    },
+    linkpreview: {
+      key: "accf88172827da48c1c70bb0712cc444",
+    },
+    progress: {
+      position: "top",
+      color: "var(--theme-color,#42b983)",
+      height: "3px",
+    },
+    gitalk: {
+      clientID: 'Ov23liWDIjvfPF1Lotlw',
+      clientSecret: '759ccc500dbec149d461c34031f787c3d7bd6a4a',
+      repo: 'Infinite-space',
+      owner: 'chenlin1037',
+      admin: ['chenlin1037']
     }
+
   }
+
+
+
+
 </script>
-<!-- Put them above docsify.min.js -->
+
 <script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/docsify.min.js"></script>
 <!-- code render-->
 <script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-bash.min.js"></script>
@@ -52,6 +115,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css" />
+<link rel="stylesheet" href="//unpkg.com/docsify-link-preview/src/style.css"/>
 <script src="https://cdn.jsdelivr.net/npm/marked@3"></script>
 <!-- CDN files for docsify-katex -->
 <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
@@ -62,5 +127,30 @@
 <script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/plugins/search.js"></script>
 <!-- count -->
 <script src="//cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+<!--copy code-->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+<!-- emoji表情支持 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+<!-- 图片放大缩小支持 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<!--评论组件-->
+<!--<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>-->
+<!--分享按钮-->
+<script src="//unpkg.com/docsify-share/build/index.min.js"></script>
+<!--底部版权-->
+<script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+
+<script src="//unpkg.com/docsify-link-preview/src/index.js"></script>
+<!--阅读进度条-->
+<script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+
+<!-- GitTalk评论 -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+<script src="https://unpkg.com/docsify-gitalk@1.0.0/dist/docsify-gitalk.min.js"></script>
+
+
+
 </body>
 </html>
