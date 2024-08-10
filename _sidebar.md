@@ -6,4 +6,5 @@
     * [第5篇 Vue语言学习笔记](content/Vue语言学习笔记.md)
     * [第6篇 JavaScript学习笔记](content/JavaScript学习笔记.md)
     * [第7篇 窗口函数及其他](content/窗口函数及其他.md)
+    * [第8篇 杂记](content/编程人生.md)
 
