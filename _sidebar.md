@@ -7,4 +7,5 @@
     * [第6篇 JavaScript学习笔记](content/JavaScript学习笔记.md)
     * [第7篇 窗口函数及其他](content/窗口函数及其他.md)
     * [第8篇 杂记](content/编程人生.md)
+    * [第9篇 奥运冠军今何在](content/奥运冠军今何在.md)
 
